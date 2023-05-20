@@ -1,0 +1,37 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-subtotal_summary_container {
+  padding: 0 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--expenses-black);
+  margin: 0 0 10px;
+}
+
+.expenses-subtotal_summary_container h3 {
+  text-align: center;
+  color: var(--expenses-blue-one);
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expenses-subtotal_summary_container {
+    padding: 0 100px 40px;
+    margin: 0 0 20px;
+  }
+
+  .expenses-subtotal_summary_container h3 {
+    font-size: 30px;
+  }
+}

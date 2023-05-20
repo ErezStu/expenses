@@ -1,0 +1,12 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.card {
+  border-radius: 12px;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}

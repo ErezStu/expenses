@@ -1,0 +1,44 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.new-expense {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: var(--expenses-yellow-one);
+}
+
+.new-expense button {
+  font-size: 20px;
+  padding: 20px 40px;
+  background-color: var(--expenses-green-one);
+  color: var(--expenses-white);
+  border-radius: 12px;
+  border: none;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+@media only screen and (min-width: 1024px) {
+  .new-expense {
+    padding: 80px calc((100% - 540px) / 2) 0;
+  }
+
+  .new-expense button {
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .new-expense button:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
+}

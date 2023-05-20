@@ -1,0 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-auth {
+  padding: 40px 20px 0;
+}
+
+.expenses-auth__title {
+  padding: 0 0 40px;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+}
+
+.expenses-auth__switch_form {
+  text-align: center;
+  font-size: 20px;
+}
+
+.expenses-auth__switch_form span {
+  color: var(--expenses-blue-one);
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expenses-auth {
+    padding: 80px calc((100% - 500px) / 2) 0;
+  }
+
+  .expenses-auth__title {
+    font-size: 80px;
+    padding: 0 0 80px;
+  }
+
+  .expenses-auth__form {
+    padding: 0 0 40px;
+  }
+
+  .expenses-auth__input {
+    margin: 0 0 30px;
+    font-size: 20px;
+  }
+
+  .password_input {
+    margin: 0 0 40px;
+  }
+
+  .expenses-auth__btn {
+    cursor: pointer;
+    font-size: 30px;
+  }
+
+  .expenses-auth__switch_form {
+    font-size: 25px;
+  }
+
+  .expenses-auth__switch_form span {
+    cursor: pointer;
+  }
+}

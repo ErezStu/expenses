@@ -1,0 +1,54 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-year__filter {
+  color: var(--expenses-white);
+  padding: 0;
+}
+
+.expenses-year__filter_control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  padding: 0 0 20px;
+  gap: 0 40px;
+}
+
+.expenses-year__filter label {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.expenses-year__filter select {
+  padding: 10px 40px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expenses-year__filter_control {
+    padding: 0 0 40px;
+    gap: 0 100px;
+  }
+
+  .expenses-year__filter label {
+    font-size: 30px;
+  }
+}

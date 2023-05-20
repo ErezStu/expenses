@@ -1,0 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-auth__form {
+  padding: 0 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.expenses-auth__input {
+  padding: 10px;
+  margin: 0 0 20px;
+  border-radius: 12px;
+  border: 1px solid var(--expenses-black);
+}
+
+.password_input_container {
+  position: relative;
+}
+
+.password_input_eye {
+  position: absolute;
+  width: 20px;
+  height: auto;
+  top: 12px;
+  left: 10px;
+}
+
+.password_input {
+  margin: 0 0 40px;
+  width: -webkit-fill-available;
+}
+
+.expenses-auth__btn {
+  border: none;
+  font-weight: bold;
+  background-color: var(--expenses-green-two);
+  border-radius: 12px;
+  padding: 10px 0;
+  font-size: 25px;
+  text-align: center;
+  color: var(--expenses-white);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+@media only screen and (min-width: 1024px) {
+  .password_input_eye {
+    left: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+}

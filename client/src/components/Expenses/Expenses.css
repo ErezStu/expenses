@@ -1,0 +1,26 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses {
+  padding: 20px 10px;
+  background-color: var(--expenses-yellow-one);
+}
+
+.expenses__filters {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1024px) {
+  .expenses {
+    padding: 80px calc((100% - 1000px) / 2) 40px;
+  }
+
+  .expenses__filters {
+    justify-content: center;
+    gap: 0 100px;
+  }
+}

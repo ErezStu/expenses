@@ -1,0 +1,109 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.chart-bar {
+  width: 20px;
+  position: relative;
+}
+
+.chart-bar__inner {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--expenses-black);
+  border-radius: 12px;
+  /* background-color: var(--expenses-green-one); */
+  background-color: transparent;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+.chart-bar__inner.selected::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--expenses-blue-one);
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateX(18%);
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  border-radius: 12px;
+}
+
+.chart-bar__fill {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+.chart-bar__label {
+  color: var(--expenses-white);
+  position: absolute;
+  font-weight: bold;
+  font-size: 15px;
+  letter-spacing: 10px;
+  margin: 0 auto;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  z-index: 1;
+}
+
+.chart-bar__month_summary {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .chart-bar {
+    width: 50px;
+  }
+
+  .chart-bar__label {
+    font-size: 20px;
+  }
+
+  .chart-bar__month_summary {
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: var(--expenses-red-two);
+    font-size: 20px;
+  }
+
+  .chart-bar__inner.selected::after {
+    width: 15px;
+    height: 15px;
+    bottom: unset;
+    top: -20px;
+    transform: unset;
+  }
+}

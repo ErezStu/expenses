@@ -1,0 +1,92 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expense-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 0 10px;
+  margin: 0 0 20px;
+  border-bottom: 2px dotted var(--expenses-black);
+  gap: 0 10px;
+  min-height: 100px;
+}
+
+.expense-item__delete_button {
+  background-color: var(--expenses-red-two);
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 8px;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+  border: none;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+.expense-item__price {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--expenses-white);
+  margin: 0;
+}
+
+.expense-item__title_wrapper {
+  color: var(--expenses-white);
+  width: 130px;
+}
+
+.expense-item__title {
+  margin: 0;
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expense-item {
+    padding: 0 0 20px;
+    margin: 0 0 40px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .expense-item__delete_button {
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .expense-item__delete_button:hover {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+  }
+
+  .expense-item__price {
+    font-size: 25px;
+  }
+  .expense-item__title_wrapper {
+    width: 200px;
+  }
+
+  .expense-item__title {
+    font-size: 25px;
+  }
+}

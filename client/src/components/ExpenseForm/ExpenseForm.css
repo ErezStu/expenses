@@ -1,0 +1,94 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.new-expense__form {
+  padding: 0 0 40px;
+}
+
+.new-expense__controls {
+  padding: 0 0 40px;
+}
+
+.new-expense__control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 20px 0;
+  padding: 0 0 20px;
+}
+
+.new-expense__control label {
+  font-weight: bold;
+  display: block;
+  text-align: right;
+  font-size: 20px;
+  color: var(--expenses-white);
+}
+
+.new-expense__control input {
+  padding: 5px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+
+.new-expense__actions_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.new-expense__actions_wrapper button.new-expense__actions_cancel {
+  background-color: var(--expenses-red-two);
+}
+
+@media only screen and (min-width: 1024px) {
+  .new-expense__controls {
+    padding: 0 0 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 0 40px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .new-expense__control {
+    padding: 0 0 30px;
+    width: 46%;
+  }
+
+  .new-expense__control label {
+    font-size: 30px;
+  }
+
+  .new-expense__control input {
+    font-size: 25px;
+    padding: 8px;
+  }
+}

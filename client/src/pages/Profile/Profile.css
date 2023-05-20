@@ -1,0 +1,29 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses__profile_container {
+  text-align: center;
+}
+
+.expenses__profile_title {
+  text-align: center;
+  margin: 0;
+  padding: 40px 0;
+  font-size: 40px;
+}
+
+.expenses__profile_container p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.expenses__profile_container h4 {
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;
+  font-size: 20px;
+}

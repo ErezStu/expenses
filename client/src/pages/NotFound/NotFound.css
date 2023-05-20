@@ -1,0 +1,64 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-404 {
+  padding: 100px 0 0;
+  text-align: center;
+  color: var(--expenses-red-one);
+}
+
+.expenses-404__titles_container {
+}
+
+.expenses-404__title {
+  text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+  padding: 0 0 50px;
+  margin: 0;
+}
+
+.expenses-404__sub_title {
+  padding: 0 0 50px;
+  font-size: 40px;
+  line-height: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+.expenses-404__pic_container {
+  padding: 0 20px 50px;
+  text-align: center;
+}
+
+.expenses-404__pic {
+  width: 200px;
+  height: 200px;
+}
+
+.expenses-404__link {
+  color: var(--expenses-blue-one);
+  text-decoration: unset;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expenses-404__title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+
+  .expenses-404__sub_title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .expenses-404__pic {
+    width: 400px;
+    height: 400px;
+  }
+}

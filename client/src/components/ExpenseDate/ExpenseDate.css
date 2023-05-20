@@ -1,0 +1,48 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expense-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 40px;
+  padding: 10px;
+  background-color: var(--expenses-purple-one);
+  color: white;
+  border-radius: 12px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+.expense-date p {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expense-date {
+    width: 100px;
+    padding: 15px;
+  }
+
+  .expense-date p {
+    font-size: 22px;
+  }
+}

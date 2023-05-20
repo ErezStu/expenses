@@ -1,0 +1,76 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-navbar {
+  padding: 20px calc((100% - 1440px) / 2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: var(--expenses-purple-one);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px 18px inset;
+}
+
+.expenses-navbar__left_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.expenses-navbar__left_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.expenses-navbar__link {
+  color: var(--expenses-white);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.expenses-navbar__right_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 40px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.expenses-navbar__profile {
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--expenses-white);
+}
+
+.expense-navbar__logout {
+  border: none;
+  background-color: transparent;
+  color: var(--expenses-red-one);
+  font-size: 20px;
+  cursor: pointer;
+}

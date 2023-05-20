@@ -1,0 +1,25 @@
+.expense-category select {
+  height: 31px;
+  border-radius: 12px;
+  width: 100%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+}
+
+.expense-category select option {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expense-category select {
+    height: 45px;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .expense-category select option {
+    font-size: 22px;
+  }
+}

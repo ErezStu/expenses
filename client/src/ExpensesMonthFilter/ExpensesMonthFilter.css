@@ -1,0 +1,29 @@
+.expenses-month__filter {
+  color: var(--expenses-white);
+  padding: 0;
+}
+
+.expenses-month__filter_control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  padding: 0 0 20px;
+  gap: 0 40px;
+}
+
+.expenses-month__filter select {
+  padding: 10px 40px;
+  font-weight: bold;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expenses-month__filter_control {
+    padding: 0 0 40px;
+    gap: 0 100px;
+  }
+}

@@ -1,0 +1,28 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.expenses-list {
+  list-style: none;
+  padding: 0;
+  height: 250px;
+  overflow: auto;
+}
+
+.expenses-list__fallback {
+  text-align: center;
+  font-size: 40px;
+  color: var(--expenses-red-two);
+  padding: 0 0 100px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .expenses-list {
+    height: unset;
+    overflow: unset;
+  }
+}
